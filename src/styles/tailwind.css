@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    /* p{
-        @apply text-body;
-    } */
+@layer base {
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    @apply text-gray-500;
+    @apply bg-white;
+  }
+  .display {
+    @apply font-cooper;
+  }
+  h1,
+  h2 {
+    @apply font-display;
+  }
 }

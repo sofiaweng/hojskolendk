@@ -20,33 +20,46 @@ export default {
     yellow: {
       100: "#FDFFD6",
       200: "#FBFFB3",
-      300: "#hexkode",
-      400: "#hexkode",
+      300: "#F9FE8Ae",
+      400: "#F7FE67",
       500: "#F3FE40",
-      600: "#hexkode",
-      700: "#hexkode",
-      800: "#hexkode",
-      900: "#hexkode",
+      600: "#F1FE01",
+      700: "#B2BC01",
+      800: "#3A3D00",
+      900: "#1D1E00",
     },
-    white: "#fff",
-    black: "#000",
+    white: "#F2F2F2",
+    lightgrey: "#C4C4C4",
+    grey: "#686563",
+    black: "#0C0C0C",
 
     /* Tilføj din egen spacing nedenfor */
-    // spacing: {
-    //     'm': '40px',
-    // },
-
+    spacing: {
+      xxs: "8px",
+      xs: "16px",
+      s: "24px",
+      sm: "32px",
+      m: "40px",
+      ml: "48px",
+      lg: "64px",
+      xl: "80px",
+      xxl: "96px",
+      xxxl: "112px",
+    },
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-    // fontFamily: {
-    //     sans: ['Prompt', 'sans-serif'],
-    //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-    // },
+    fontFamily: {
+      sans: ["neue-haas-grotesk-display", "sans-serif"],
+      cooper: ["cooper-black-std", "serif"],
+      display: ["playfair-display", "monospace"] /* eksempel på ekstra font */,
+    },
 
     /* Tilføj dit typografiske hierarki herunder */
-    // fontSize: {
-    //     base: ['1rem', { lineHeight: '1.5rem' }],
-    //     large: ['2.5rem', { lineHeight: '3.75rem' }],
-    //   },
+    fontSize: {
+      base: ["17px", { lineHeight: "auto" }],
+      medium: ["33px", { lineHeight: "auto" }],
+      large: ["39px", { lineHeight: "auto" }],
+      xlarge: ["55px", { lineHeight: "auto" }],
+    },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
     //   fontWeight: {
