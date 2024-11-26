@@ -1,6 +1,48 @@
 ---
+import { Image } from 'astro:assets';
+import logowithstem from "../assets/images/logowithstem.svg";
+import fb from "../assets/images/fb.png";
 ---
 <div>
     <p class="max-w-screen-xl mx-auto text-white">Footer - tilføj footerindhold</p>
 </div>
       
+<div class="flex bg-lightgrey relative w-screen h-72">
+    
+    <Image class="w-20 lg:w-96 absolute -top-16" src={logowithstem} alt="gili islands singleview"></Image>
+    
+    <div class="flex justify-center  w-full space-x-10 mt-10">
+        <div>
+            <h1 class="display text-xl text-orange-500">HÖJSKOLENDK</h1>
+            <div class="text-black">
+                <p>Rosenørns Allé 29</p>
+                <p>1970 Frederiksberg</p>
+                <p>Danmark</p>
+            </div>
+            
+        </div>
+        
+        <div>
+            <h1 class="display text-xl text-orange-500">KONTAKT</h1>
+            <div class="text-black">
+                <p>Telefon: 7027 9007</p>
+                <p>Mandag til Fredag // Kl. 10.00-16.00 </p>
+                <p>Mail: info@hojskolendk.dk</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="">
+        <div class="flex flex-col text-right absolute right-10 top-10 space-y-2">
+            <a class="text-white" href="">Handelsbetingelser</a>
+            <a class="text-white" href="">Cookiepolitik</a>
+            <a class="text-white" href="">Data- & Privatlivspolitik</a>
+        </div>
+        <div class="flex flex-col text-right absolute right-10 top-44 space-y-2">
+            <a class="text-white" href="">Copyright © HÖJSKOLENDK 2022 • CVR 32491162</a>
+            <a class="text-white" href="">HÖJSKOLENDK er medlem af Rejsegarantifonden</a>
+        </div>
+    </div>
+    
+</div>
