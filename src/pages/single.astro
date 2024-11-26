@@ -11,41 +11,50 @@ import Accordion from "../components/Accordion.astro"
 <!-- august -->
 
 <MainLayout>
-<section>
+<section class="h-[98vh] flex flex-col justify-center  items-center bg-[url('/singlehero.png')] bg-cover ">
     <!-- kanske hitta bättre bild :) -->
-    <Image class="lg:h-screen object-cover" src={Singlehero} alt="hero singleview"></Image>
-    <h1>AUSTRALIA, NEW ZEALAND, BALI & GILI ISLANDS</h1>
+    <h1 class="font-cooper text-8xl  max-w-4xl text-yellow-500">AUSTRALIA, NEW ZEALAND, BALI & GILI ISLANDS</h1>
+    <a href="#intro" class=" lg:pb-6 bg-[url('/arrowdown-orange.svg')] z-20 hover:animate-bounce bg-cover absolute -bottom-5 w-[10%] md:-bottom-10 md:w-[5%] xl:w-[3.5%] aspect-[62/133] text-transparent ">
+        arrowdown
+        </a> 
 </section>
 
-<section>
-    <div>
+<section class="grid md:grid-cols-2 lg:mx-20 my-14">
+    <div class="relative">
         <Image class="" src={Singlegili} alt="gili islands singleview"></Image>
-        <button></button>
-        <button></button>
-    </div>
-    <div>
-        <h1>HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
-            <div> <span>Varighed:</span> <span>3 månader</span></div>
-            <div> <span>Uge 1:</span> <span>introdage</span></div>
-            <div> <span>1. Måned:</span> <span>Ubud, Bali & Gili Islands</span></div>
-            <div> <span>2. Måned:</span> <span>Byron Bay, Australien</span></div>
-            <div> <span>3. Måned:</span> <span>Queenstown, New Zealand</span></div>
         
-            <div> <span>10. jan 2025</span> <span>64.900 DKK</span></div>
-            <div> <span>ca. 12 september 2025</span> <span>64.900 DKK</span></div>
-            <div> <span>ca. 8 januar 2026</span> <span>65.500 DKK</span></div>
-            <div> <span>ca. 11 september 2026</span> <span>65.500 DKK</span></div>
+           <div class=" absolute bottom-4 right-4"> <Button >Tilfeld infomøde</Button></div>
+           <div class="absolute bottom-4 left-4"> <Button>Reserver plads</Button></div>
+        
+    </div>
+    <div class="px-4 md:px-8">
+            <h1 class="font-cooper text-4xl text-orange-500 ">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
+            <div class="mt-10">
+                <div> <span class="font-bold mr-20">Varighed:</span> <span>3 månader</span></div>
+                <div> <span class="font-bold mr-[6.6rem]">Uge 1:</span> <span>Introdage</span></div>
+                <div> <span class="font-bold mr-20">1. Måned:</span> <span>Ubud, Bali & Gili Islands</span></div>
+                <div> <span class="font-bold mr-20">2. Måned:</span> <span>Byron Bay, Australien</span></div>
+                <div> <span class="font-bold mr-20">3. Måned:</span> <span>Queenstown, New Zealand</span></div>
+            </div>
+            <div class="mt-10 relative space-y-4">
+                <div> <span>10. jan 2025</span> <span class="absolute right-20 md:right-32">64.900 DKK</span></div>
+                <div> <span>ca. 12 september 2025</span> <span class="absolute right-20 md:right-32">64.900 DKK</span></div>
+                <div> <span>ca. 8 januar 2026</span> <span class="absolute right-20 md:right-32">65.500 DKK</span></div>
+                <div> <span>ca. 11 september 2026</span> <span class="absolute right-20 md:right-32">65.500 DKK</span></div>
+            </div>
 
-            <div> <Image class="h-20 w-auto" src={Paperplane} alt="gili islands singleview"></Image>
-                <span>Flygbillet tur/retur er inkluderet</span>
+            <div class="flex lg:ml-28 mt-10"> 
+                <Image class="h-8 w-auto" src={Paperplane} alt="gili islands singleview"></Image>
+                <span class="font-bold">Flygbillet tur/retur er inkluderet</span>
             </div>
     </div>
-    
-    <div class="mx-44">
-        <Accordion class="border-b-2 border-black" caption="Overblik" image="" bio="Australien, New Zealand, Bali & Gili Islands. Tag med på højskole i udlandet og oplev den modsatte side af kloden med fantastiske oplevelser i smuk natur og spændende kulturer. På Bali og Gili Islands dykker vi ned i farverige landskaber, frodige regnskove, hvide sandstrande og vilde vulkaner. Nyd solnedgange, frisk kokosnød og et barfodsparadis. Australien byder på et stort eventyr med storbyer, ørkener, regnskove, fantastiske strande og unik natur. Mød kænguruer, koalaer og papegøjer i et gæstfrit og åbent land. New Zealand er et mekka for eventyr med rafting, kajaksejlads, vandreture og canyoning. Oplev nogle af verdens smukkeste landskaber og et imødekommende folk."></Accordion>
-        <Accordion class="border-b-2 border-black" caption="Program" image="" bio="INTRODAGE Dubai/Bangkok/Doha/Singapore/Brisbane Vi starter vores højskole-eventyr med nogle skønne og oplevelsesrige introdage, hvor dagene er skræddersyet til vores nye fællesskab. Vi lærer hinanden bedre at kende og dagene går bl.a. med hyggelige fællesmiddage, sightseeing, oplevelser og vores helt eget 'HÖJSKOLENDK Adventurerace', der bringer os vidt omkring i byen til en sjov og aktiv dag. I forhold til destination for vores introdage, så afhænger det af flybilletter, sæson og datoer for opholdet. Oftest har vi afholdt introdagene i enten Dubai, Bangkok, Doha, Singapore eller Hong Kong og ligegyldigt hvilken by vi lander i, kan I glæde jer til nogle fede, spændende og skønne dage."></Accordion>
-        <Accordion class="border-b-2 border-black" caption="Inkluderet" image="" bio=""></Accordion>
-        <Accordion class="border-b-2 border-black" caption="Fag" image="" bio=""></Accordion>
+</section>
+</section>
+    <div class="mx-60">
+        <Accordion class="border-b-2 border-black" caption="Overblik" image="boat.webp" bio="Australien, New Zealand, Bali & Gili Islands. Tag med på højskole i udlandet og oplev den modsatte side af kloden med fantastiske oplevelser i smuk natur og spændende kulturer. På Bali og Gili Islands dykker vi ned i farverige landskaber, frodige regnskove, hvide sandstrande og vilde vulkaner. Nyd solnedgange, frisk kokosnød og et barfodsparadis. Australien byder på et stort eventyr med storbyer, ørkener, regnskove, fantastiske strande og unik natur. Mød kænguruer, koalaer og papegøjer i et gæstfrit og åbent land. New Zealand er et mekka for eventyr med rafting, kajaksejlads, vandreture og canyoning. Oplev nogle af verdens smukkeste landskaber og et imødekommende folk."></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Program" image="bloon.webp" bio="INTRODAGE: Vi starter med spændende introdage i fx Dubai, Bangkok, Doha, Singapore eller Brisbane. Vi lærer hinanden at kende gennem fællesmiddage, sightseeing og vores eget ’HÖJSKOLENDK Adventurerace’. Destination afhænger af fly og sæson. TEAMBUILDING: Bali & Gili Islands byder på frodig natur, smukke strande og aktiviteter som surfing og hyggelige landsbybesøg. Fra Ubud sejler vi til de bilfri Gili Islands med kridhvide strande og turkisblåt hav. FRIUGE INDONESIEN: Udforsk Indonesien i friugen - besøg Lombok, Nusa Penida, Komodo eller oplev yoga-retreats, surfcamps og roadtrips. Vi sikrer tryghed og fantastiske oplevelser. SELVUDVIKLING & KOMMUNIKATION: Byron Bay, Australien, byder på lækre strande, surf, markeder og undervisning. Brug fritiden på hikes, musik og besøg i Cape Byron – Australiens østligste punkt. FRIUGE AUSTRALIEN: Udforsk Australien i en 10-dages friuge. Tag på roadtrip, surfcamp, besøg Sydney, Melbourne eller Ayers Rock, eller svøm med delfiner. Vi mødes igen og flyver videre. SPORT & ADVENTURE: Queenstown, New Zealand, er et adventure-mekka med natur som bjerge, floder og gletsjere. Prøv rafting, kajak, hiking og canyoning – alt inkluderet. FRIUGE NEW ZEALAND: Udforsk New Zealand i ca. 10 dage – roadtrips til campsites og naturen er oplagt. Vi mødes til sidst og flyver hjem til Danmark med minder for livet."></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Inkluderet" image="ink.webp" bio="ALTID: Dansk rejseleder og undervisere, 24-timers vagttelefon, infobreve, visumvejledning, afrejsemøde, fælles afrejse, transfers, højskolebevis, Facebook-gruppe, rabat på vacciner, indkvartering (ekskl. friuger), lokal transport og entré, højskoleaftener, medlemskab af elevforening og Rejsegarantifonden, partnerskab med 'World Animal Protection', skovfredning med 'Verdens Skove' og plantning af 50 træer pr. elev. GENERELT: Fly tur/retur, skatter og bagage, undervisning i teambuilding, sport & adventure og selvudvikling, samt HÖJSKOLENDK Adventurerace. AUSTRALIEN: Indkvartering i Byron Bay, transport fra Brisbane, hike til Cape Byron, lån af surfboards, lokale markeder, livemusik, strand 100 meter fra værelset, rooftop bar og Robinson-dyst. NEW ZEALAND: Indkvartering i Queenstown, hikes til Queenstown Hill, Ben Lomond og Mt. Cook (Hooker Valley), kajak og canyoning ved Wanaka, river rafting, bubble soccer, archery tag, forhindringsbane, disc golf, filmaftener, jacuzzi og BBQ. BALI & GILI ISLANDS: Indkvartering med morgenmad, hike til Mount Batur, Monkey Forest, Tegalalang risterrasser, vandfald i Ubud, lokale markeder, heldagstur til Nusa Penida (Kelingking), surftimer, udflugt til Canggu, hurtigfærge til Gili Islands, snorkeltur (inkl. undervandsstatuer) og beach clean-up."></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Fag" image="fag.jpg" bio="TEAMBUILDING: Første fag er Teambuilding – et aktivt, sjovt og inspirerende fag. Fokus er på fællesskab og trivsel gennem øvelser i samarbejde, relationer, tillid og værdier. Vi udfordrer jer med sjove og lærerige aktiviteter, der skaber et stærkt og inkluderende fællesskab. Glæd dig til en meningsfuld start på højskole-eventyret. SPORT & ADVENTURE: Et actionfyldt fag med teamsport og adventure som kajak, rafting, canyoning og hikes. Vi spiller Bubblesoccer og udfordrer hinanden i ArcheryTag. Aktiviteterne styrker fællesskab, selvtillid og mental styrke. Forvent adrenalinfyldte oplevelser og grænseoverskridende sjov – alle kan være med! SELVUDVIKLING & KOMMUNIKATION: Undervisning med fokus på dig. Gennem øvelser, dialog og refleksion lærer du at sætte mål, finde retning og styrke dine personlige egenskaber. Vi arbejder med coaching, mindfulness og debat for at give dig værktøjer til personlig udvikling og indsigt i dine styrker."></Accordion>
         <Accordion class="border-b-2 border-black" caption="Kontakt" image="louise.webp" bio="LOUISE SKJOLDBORG BRUUN. Hvis du læser dette har du sikkert eventyr i blodet, er nysgerrig på vores eventyrlige højskoleophold i 'Hawaii, Australien, Japan, Bali & Gili Islands', og har måske lidt spørgsmål du gerne vil have svar på eller brug for en snak ift. opholdet. Jeg hedder Louise og er selv tidligere elev (fra 2014) i HÖJSKOLENDK. Efter mit eget fantastiske højskoleophold, blev jeg rejseleder og nu er jeg en del af kontoret. Blandt mange af mine spændende opgaver i HÖJSKOLENDK, er dette højskoleophold “mit” ophold, så det er mig der sidder bag skærmen og sørger for alt det praktiske omkring eventyret og knokler mit allerbedste, så I får en fantastisk rejse. Har du spørgsmål, vil høre mere eller bare godt kunne tænke dig en hyggelig snak om vores eventyr i 'Hawaii, Australien, Japan, Bali & Gili Islands', er du altid velkommen til at give mig et kald eller smide en mail. Tlf.: 7027 9007 // Mail: lsb@hojskolendk.dk Jeg glæder mig til at høre fra dig! Louise - HÖJSKOLENDK"></Accordion>
     </div>
 </section>

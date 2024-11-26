@@ -4,15 +4,15 @@ const { caption, bio, image } = Astro.props;
 
 <div>
   
-  <button class="accordion text-4xl flex justify-between items-center text-grey font-display">
-    {caption}
+  <button class="accordion text-4xl flex justify-between items-center">
+    <h1>{caption}</h1>
     <span class="icon font-extralight"></span>
   </button>
 
   
-  <div class="panel grid grid-cols-1 md:grid-cols-2 gap-4 items-start overflow-hidden max-h-0 transition-[max-height] ">
-    <p>{bio}</p>
-    <img src={image} alt="" class="max-w-[300px] -mt-5 mx-auto h-auto">
+  <div class="panel grid grid-cols-1 md:grid-cols-2 gap-4 items-start overflow-hidden max-h-0 transition-[max-height]">
+    <p class="pt-8">{bio}</p>
+    <img class="pt-8" src={image} alt="" class="max-w-[300px] -mt-5 mx-auto h-auto">
   </div>
   
   
@@ -22,7 +22,7 @@ const { caption, bio, image } = Astro.props;
 <style>
   .accordion {
     cursor: pointer;
-    padding: 18px; 
+    padding: 3px; 
     width: 100%; 
     text-align: left; 
     outline: none; 
@@ -38,6 +38,7 @@ const { caption, bio, image } = Astro.props;
     display: inline-block;
     transition: transform 0.4s ease; 
     font-size: 4.5rem; 
+    color: #FF5900;
   }
 
   
@@ -60,7 +61,7 @@ const { caption, bio, image } = Astro.props;
 
   
   .border {
-    height: 4px;
+    height: 2px;
     background-color: grey; 
     transition: all 0.4s ease; 
   }
