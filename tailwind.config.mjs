@@ -20,7 +20,7 @@ export default {
         yellow: {
           100: "#FDFFD6",
           200: "#FBFFB3",
-          300: "#F9FE8Ae",
+          300: "#F9FE8A",
           400: "#F7FE67",
           500: "#F3FE40", // Custom yellow shades
           600: "#F1FE01",
