@@ -43,8 +43,8 @@ export default {
       ml: "48px",
       lg: "64px",
       xl: "80px",
-      xxl: "96px",
-      xxxl: "112px",
+      "2xl": "96px",
+      "3xl": "112px",
     },
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
     fontFamily: {
