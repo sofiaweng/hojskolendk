@@ -10,38 +10,28 @@ import Logo from "../assets/images/logo.svg";
                     <Image class="w-3xl" src={Logo} alt="logo ikon"></Image>
                 </a>
             </div>
-            <nav id="desktopmenu" class="hidden lg:block self-center">
-                <div class="flex flex-row gap-8">
-                <ul class="flex flex-row gap-8 self-center">
-                    <li class="hover:scale-110 ease-linear duration-200"><a href="#aboutme" class=" font-semibold  hover:border-b-2 border-solid border-customBlack ease-linear  transition-all duration-200">ABOUT ME</a></li>
-                    <li class="hover:scale-110 ease-linear duration-200"><a href="#experience" class=" font-semibold hover:border-b-2 border-solid border-customBlack transition-all duration-200">
-                        EXPERIENCE & COMPETENCES</a></li>
-                    <li class="hover:scale-110 ease-linear duration-200"><a href="#contact" class="font-semibold  hover:border-b-2 border-solid border-customBlack transition-all duration-200">CONTACT</a></li>
-                </ul>
-           
-            </div>
-            </nav>
+        
             <!-- Burgermenu -->
             <div id="burgermenu" class="self-center  p-2 cursor-pointer" x-on:click="showmenu = !showmenu">
                 <template x-if="!showmenu">
                     <!-- Burgerikon -->
                     <div>
-                        <span class="block w-10 h-1 bg-black my-2"></span>
-                        <span class="block w-10 h-1 bg-black my-2"></span>
-                        <span class="block w-10 h-1 bg-black my-2"></span>
+                        <span class="block w-10 h-1 bg-orange-500 my-2"></span>
+                        <span class="block w-10 h-1 bg-orange-500 my-2"></span>
+                        <span class="block w-10 h-1 bg-orange-500 my-2"></span>
                     </div>
                 </template>
                 <template x-if="showmenu">
                     <!-- Traditionelt kryds -->
                     <div class="relative w-10 h-10 flex items-center justify-center">
-                        <span class="absolute block w-full h-1 bg-black transform rotate-45 ease-in"></span>
-                        <span class="absolute block w-full h-1 bg-black  transform -rotate-45 ease-in"></span>
+                        <span class="absolute block w-full h-1 bg-orange-500 transform rotate-45 ease-in"></span>
+                        <span class="absolute block w-full h-1 bg-orange-500 transform -rotate-45 ease-in"></span>
                     </div>
                 </template>
             </div>
         </div>
 
-        <nav id="mobilmenu" class="flex flex-col content-center lg:hidden text-center py-1  "
+        <nav id="mobilmenu" class="flex flex-col content-center text-center py-1  "
             x-show="showmenu" x-transition x-on:click.outside="showmenu = false">
             <ul class="flex flex-col gap-5    ">
      
