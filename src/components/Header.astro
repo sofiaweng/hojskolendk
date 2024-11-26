@@ -2,19 +2,17 @@
 
 ---
 
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full z-10 bg-white">
+<div x-data="{ showmenu: false }" class="p-4 fixed w-full z-10 bg-white" x-on:click.outside="showmenu = false">
     <div id="navbar" class="flex flex-row justify-between">
       <!-- Logo Section -->
       <div id="logo" class="">
         <a href="#navbar" class="">
-          <!-- <p class="text-4xl font-semibold">Sten Simons</p> -->
+          <p class="text-4xl font-semibold">Sten Simons</p>
         </a>
       </div>
   
-
-  
       <!-- Burger Menu Button -->
-      <button id="burgermenu" class="" x-on:click.debounce.200ms="showmenu = !showmenu">
+      <button id="burgermenu" class="" x-on:click.stop="showmenu = !showmenu">
         Menu
       </button>
     </div>
@@ -28,8 +26,7 @@
          x-transition:enter-end="opacity-100 scale-100"
          x-transition:leave="transition ease-in duration-150"
          x-transition:leave-start="opacity-100 scale-100"
-         x-transition:leave-end="opacity-0 scale-95"
-         x-on:click.outside="showmenu = false">
+         x-transition:leave-end="opacity-0 scale-95">
       <ul>
         <li><a href="#kapitlerne" x-on:click="showmenu = false">Kapitlerne</a></li>
         <li><a href="#anmeldelser" x-on:click="showmenu = false">Anmeldelser</a></li>
