@@ -1,13 +1,124 @@
 ---
 import Button from '../components/Button.astro';
 ---
-<article class="lg:max-w-lg max-w-sm mx-auto">
-    <div class="card bg-[url('../colombia.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px]">
-       <div class="flex flex-col text-medium text-yellow-500 font-cooper">
-            <h2 class="">COSTA RICA</h2>
-            <h2 class="">MEXICO</h2>
-            <h2 class="">COLOMBIA</h2>
-       </div>
-        <Button>Læs mer</Button>
+ <!-- lg:max-w-lg max-w-sm -->
+ <article class="">
+    <div class="mangeelementerinview space-y-5 lg:space-y-7 lg:grid grid-cols-3 place-items-center mx-36">
+        <div class="mangeelementer1 mt-7 card bg-[url('../colombia.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                <h2>COSTA RICA</h2>
+                <h2>MEXICO</h2>
+                <h2>COLOMBIA</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+        </div>
+    
+        <div class="mangeelementer2 card bg-[url('../newzealand.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                 <h2>AUSTRALIA</h2>
+                 <h2>NEW ZEALAND</h2>
+                 <h2>BALI</h2>
+                 <h2>GILI ISLANDS</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer3 card bg-[url('../maldiverna.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                 <h2>MALDIVERNE</h2>
+                 <h2>SRI LANKA</h2>
+                 <h2>BALI</h2>
+                 <h2>GILI ISLANDS</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer4 card bg-[url('../newyork.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                 <h2>NEW YORK</h2>
+                 <h2>CARRIBIEN</h2>
+                 <h2>HAWAII</h2>
+                 <h2>MEXICO</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer5 card bg-[url('../nepal.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                 <h2>INDIEN</h2>
+                 <h2>NEPAL</h2>
+                 <h2>THAILAND</h2>
+                 <h2>VIETNAM</h2>
+                 <h2>SRI LANKA</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer6 card bg-[url('../japan.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                <h2>HAWAII</h2>
+                <h2>AUSTRALIA</h2>
+                 <h2>JAPAN</h2>
+                 <h2>BALI</h2>
+                 <h2>GILI ISLANDS</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer7 card bg-[url('../giliislands.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                 <h2>MALDIVERNA</h2>
+                 <h2>SRI LANKA</h2>
+                 <h2>BALI</h2>
+                 <h2>GILI ISLANDS</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer8 card bg-[url('../lombok.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                <h2>BALI</h2>
+                <h2>LOMBOK</h2>
+                <h2>GILI ISLANDS</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
+         <div class="mangeelementer9 card bg-[url('../brazil.webp')] bg-cover bg-center p-6 rounded-lg hover:shadow-lg w-[295px] h-[385px] flex flex-col justify-between">
+            <div class="flex flex-col text-medium text-yellow-500 font-cooper">
+                 <h2>BRASILIEN</h2>
+                 <h2>BOLIVIA</h2>
+                 <h2>COLOMBIA</h2>
+                 <h2>ECUADOR</h2>
+                 <h2>PERU</h2>
+                 <h2>ARGENTINA</h2>
+            </div>
+            <Button class="">Læs mer</Button>
+         </div>
     </div>
-</article>
+     <div class="h-screen">
+	</div>
+ </article>
+ <script>
+    import { inView } from "motion";
+	import { animate } from 'motion';
+    	/* Mange elementer der animerer ind */
+	inView( ".mangeelementerinview", () =>{
+	animate( ".mangeelementer1", { x: [-2000, 0 ], y: [-50, 0 ] }, { duration: 1 }) 
+	animate( ".mangeelementer2", { x: [-1500, 0 ], y: [-100, 0 ] }, { duration: 3 })
+	animate( ".mangeelementer3", { x: [-1000, 0 ], y: [-150, 0 ] }, { duration: 3 })
+	animate( ".mangeelementer4", { x: [1750, 0 ] }, { duration: 2 })
+	animate( ".mangeelementer5", { x: [-2000, 0 ], y: [-100, 0 ]  }, { duration: 1 })
+	animate( ".mangeelementer6", { x: [2000, 0 ] }, { duration: 2 })
+	animate( ".mangeelementer7", { x: [1500, 0 ], y: [50, 0 ] }, { duration: 3 })
+	animate( ".mangeelementer8", { x: [1000, 0 ], y: [150, 0 ] }, { duration: 2 })
+	animate( ".mangeelementer9", { x: [1500, 0 ], y: [0, 0 ] }, { duration: 1 })
+	animate( ".mangeelementer10", { x: [2000, 0 ] , y: [50, 0 ] }, { duration: 2 })
+	return () => {
+		animate( ".mangeelementer1", { x: [-2000, 0 ], y: [-50, 0 ] }, { duration: 1 }) 
+		animate( ".mangeelementer2", { x: [-1500, 0 ], y: [-100, 0 ] }, { duration: 3 })
+		animate( ".mangeelementer3", { x: [-1000, 0 ], y: [-150, 0 ] }, { duration: 3 })
+		animate( ".mangeelementer4", { x: [1750, 0 ] }, { duration: 2 })
+		animate( ".mangeelementer5", { x: [-2000, 0 ], y: [-100, 0 ]  }, { duration: 1 })
+		animate( ".mangeelementer6", { x: [2000, 0 ] }, { duration: 2 })
+		animate( ".mangeelementer7", { x: [1500, 0 ], y: [50, 0 ] }, { duration: 3 })
+		animate( ".mangeelementer8", { x: [1000, 0 ], y: [150, 0 ] }, { duration: 2 })
+		animate( ".mangeelementer9", { x: [1500, 0 ], y: [0, 0 ] }, { duration: 1 })
+		animate( ".mangeelementer10", { x: [2000, 0 ] , y: [50, 0 ] }, { duration: 2 })
+   		}
+  	})
+	
+ </script>
