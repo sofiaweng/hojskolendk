@@ -53,7 +53,7 @@ export default {
       fontSize: {
         base: ["17px", { lineHeight: "auto" }],
         medium: ["33px", { lineHeight: "auto" }],
-        large: ["39px", { lineHeight: "auto" }],
+        large: ["39px", { lineHeight: "42px" }],
         xlarge: ["55px", { lineHeight: "auto" }],
       },
     },
