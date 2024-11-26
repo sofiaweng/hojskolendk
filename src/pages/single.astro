@@ -1,12 +1,16 @@
 ---
-
+import Button from '../components/Button.astro';
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
+import Singlehero from "../assets/images/singlehero.png";
 ---
 
 <!-- august -->
 
-<header></header>
+<MainLayout>
 <section>
-    <img src="" alt="">
+    <!-- kanske hitta bättre bild :) -->
+    <Image class="h-screen object-cover" src={Singlehero} alt="logo ikon"></Image>
     <h1>AUSTRALIA, NEW ZEALAND, BALI & GILI ISLANDS</h1>
 </section>
 
@@ -35,3 +39,4 @@
         </ul>
     </div>
 </section>
+</MainLayout>
