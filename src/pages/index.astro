@@ -3,14 +3,14 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import logowithname from "../assets/images/logowithname.svg";
 ---
 <MainLayout title="Titel">
 
-	<article class="max-w-screen-xl mx-auto">
 		<!-- Sofia -->
-	<section id="hero">
-
+	<section id="hero" class="h-[98vh] flex flex-col justify-center  items-center bg-[url('/indexhero.png')] bg-cover ">
+<Image src={logowithname} alt="logo with name" class="md:w-1/2  "></Image>
+<h1 class="text-2xl md:text-large text-yellow-500">Eventyrlige højskoleophold i udlandet for unge</h1>
 	</section>
 
 
