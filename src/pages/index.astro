@@ -4,17 +4,37 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import logowithname from "../assets/images/logowithname.svg";
+import nepalfront from "../assets/images/nepalfront.png";
 ---
 <MainLayout title="Titel">
+	<section id="hero" class="relative bg-[url('/nepal.png')] bg-cover bg-fixed bg-center h-[98vh] flex flex-col justify-center items-center">
+		<article class="relative h-full flex flex-col justify-center items-center">
+		 
+		  <!-- Logo and Text -->
+		  <div class="flex flex-col  items-center z-20">
+			<Image src={logowithname} alt="logo with name" class="md:w-2/3 " />
+			<h1 class="text-2xl md:text-lg text-center text-yellow-500 ">Eventyrlige højskoleophold i udlandet for unge</h1>
+		  </div>
+	  
+		  <!-- Scroll Arrow -->
+		  <a href="#intro" class=" bg-[url('/arrowdown-orange.svg')] z-20 hover:animate-bounce bg-cover absolute -bottom-5 w-[10%] md:-bottom-10 md:w-[5%] xl:w-[3.5%] aspect-[62/133] text-transparent">
+			arrowdown
+		  </a> 
+		</article>
+		 <!-- Static Mountain Image (fixed position) -->
+		<Image src={nepalfront} alt="people on mountain" class=" absolute left-0 w-full h-full object-cover object-center z-10" />
+		  
+	  </section>
+
 
 		<!-- Sofia -->
-	<section id="hero" class="h-[98vh] flex flex-col justify-center  items-center bg-[url('/indexhero.png')] bg-cover ">
+	<!-- <section id="hero" class="h-[98vh] flex flex-col justify-center relative items-center bg-[url('/indexhero.png')] bg-cover ">
 		<Image src={logowithname} alt="logo with name" class="md:w-1/2 lg:pt-6 "></Image>
 		<h1 class="text-2xl md:text-large text-center text-yellow-500 ">Eventyrlige højskoleophold i udlandet for unge</h1>
 			<a href="#intro" class=" lg:pb-6 bg-[url('/arrowdown-orange.svg')] z-20 hover:animate-bounce bg-cover absolute -bottom-5 w-[10%] md:-bottom-10 md:w-[5%] xl:w-[3.5%] aspect-[62/133] text-transparent ">
 			arrowdown
 			</a> 
-	</section>
+	</section> -->
 
 
 	<section id="intro" class="m-auto max-w-3xl text-center py-16">
