@@ -2,7 +2,9 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import '../styles/tailwind.css';
-import 'animate.css';
+import 'animate.css';        // Optional if you use animate.css
+import 'aos/dist/aos.css';   // This should work fine
+
 const { title } = Astro.props;
 ---
 <html lang="da">
@@ -31,10 +33,10 @@ const { title } = Astro.props;
 		<footer class="">
 			<Footer></Footer>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer>
-		import AOS from "aos";
-		AOS.init();
-		</script>
-	
+		<script>
+			import AOS from "aos";
+			AOS.init();
+		  </script>
+			  
 	</body>
 </html>
