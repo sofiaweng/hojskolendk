@@ -3,6 +3,9 @@ import Button from '../components/Button.astro';
 import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from 'astro:assets';
 import Singlehero from "../assets/images/singlehero.png";
+import Singlegili from "../assets/images/singlegili.png";
+import Paperplane from "../assets/images/paperplane.svg";
+import Accordion from "../components/Accordion.astro"
 ---
 
 <!-- august -->
@@ -10,33 +13,40 @@ import Singlehero from "../assets/images/singlehero.png";
 <MainLayout>
 <section>
     <!-- kanske hitta bättre bild :) -->
-    <Image class="h-screen object-cover" src={Singlehero} alt="logo ikon"></Image>
+    <Image class="lg:h-screen object-cover" src={Singlehero} alt="hero singleview"></Image>
     <h1>AUSTRALIA, NEW ZEALAND, BALI & GILI ISLANDS</h1>
 </section>
 
 <section>
     <div>
-        <img src="" alt="">
+        <Image class="" src={Singlegili} alt="gili islands singleview"></Image>
         <button></button>
         <button></button>
     </div>
     <div>
-        <h1></h1>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <h1>HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
+            <div> <span>Varighed:</span> <span>3 månader</span></div>
+            <div> <span>Uge 1:</span> <span>introdage</span></div>
+            <div> <span>1. Måned:</span> <span>Ubud, Bali & Gili Islands</span></div>
+            <div> <span>2. Måned:</span> <span>Byron Bay, Australien</span></div>
+            <div> <span>3. Måned:</span> <span>Queenstown, New Zealand</span></div>
+        
+            <div> <span>10. jan 2025</span> <span>64.900 DKK</span></div>
+            <div> <span>ca. 12 september 2025</span> <span>64.900 DKK</span></div>
+            <div> <span>ca. 8 januar 2026</span> <span>65.500 DKK</span></div>
+            <div> <span>ca. 11 september 2026</span> <span>65.500 DKK</span></div>
 
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <div> <Image class="h-20 w-auto" src={Paperplane} alt="gili islands singleview"></Image>
+                <span>Flygbillet tur/retur er inkluderet</span>
+            </div>
+    </div>
+    
+    <div class="mx-44">
+        <Accordion class="border-b-2 border-black" caption="Overblik" image="" bio="Australien, New Zealand, Bali & Gili Islands. Tag med på højskole i udlandet og oplev den modsatte side af kloden med fantastiske oplevelser i smuk natur og spændende kulturer. På Bali og Gili Islands dykker vi ned i farverige landskaber, frodige regnskove, hvide sandstrande og vilde vulkaner. Nyd solnedgange, frisk kokosnød og et barfodsparadis. Australien byder på et stort eventyr med storbyer, ørkener, regnskove, fantastiske strande og unik natur. Mød kænguruer, koalaer og papegøjer i et gæstfrit og åbent land. New Zealand er et mekka for eventyr med rafting, kajaksejlads, vandreture og canyoning. Oplev nogle af verdens smukkeste landskaber og et imødekommende folk."></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Program" image="" bio="INTRODAGE Dubai/Bangkok/Doha/Singapore/Brisbane Vi starter vores højskole-eventyr med nogle skønne og oplevelsesrige introdage, hvor dagene er skræddersyet til vores nye fællesskab. Vi lærer hinanden bedre at kende og dagene går bl.a. med hyggelige fællesmiddage, sightseeing, oplevelser og vores helt eget 'HÖJSKOLENDK Adventurerace', der bringer os vidt omkring i byen til en sjov og aktiv dag. I forhold til destination for vores introdage, så afhænger det af flybilletter, sæson og datoer for opholdet. Oftest har vi afholdt introdagene i enten Dubai, Bangkok, Doha, Singapore eller Hong Kong og ligegyldigt hvilken by vi lander i, kan I glæde jer til nogle fede, spændende og skønne dage."></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Inkluderet" image="" bio=""></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Fag" image="" bio=""></Accordion>
+        <Accordion class="border-b-2 border-black" caption="Kontakt" image="louise.webp" bio="LOUISE SKJOLDBORG BRUUN. Hvis du læser dette har du sikkert eventyr i blodet, er nysgerrig på vores eventyrlige højskoleophold i 'Hawaii, Australien, Japan, Bali & Gili Islands', og har måske lidt spørgsmål du gerne vil have svar på eller brug for en snak ift. opholdet. Jeg hedder Louise og er selv tidligere elev (fra 2014) i HÖJSKOLENDK. Efter mit eget fantastiske højskoleophold, blev jeg rejseleder og nu er jeg en del af kontoret. Blandt mange af mine spændende opgaver i HÖJSKOLENDK, er dette højskoleophold “mit” ophold, så det er mig der sidder bag skærmen og sørger for alt det praktiske omkring eventyret og knokler mit allerbedste, så I får en fantastisk rejse. Har du spørgsmål, vil høre mere eller bare godt kunne tænke dig en hyggelig snak om vores eventyr i 'Hawaii, Australien, Japan, Bali & Gili Islands', er du altid velkommen til at give mig et kald eller smide en mail. Tlf.: 7027 9007 // Mail: lsb@hojskolendk.dk Jeg glæder mig til at høre fra dig! Louise - HÖJSKOLENDK"></Accordion>
     </div>
 </section>
 </MainLayout>
