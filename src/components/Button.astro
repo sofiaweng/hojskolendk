@@ -1,5 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import ArrowRightOrange from "../assets/images/arrowright-orange.svg";
+import ArrowRightWhite from "../assets/images/arrowright-white.svg";
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
-</div>
+
+    <button class="p-2 px-5 border border-orange-500 bg-orange-500 rounded-full flex  text-white place-content-between hover:bg-white hover:text-orange-500 duration-150 ease-in-out group">
+        <slot />
+        <div class="bg-[url('../assets/images/arrowright-white.svg')] group-hover:bg-[url('../assets/images/arrowright-orange.svg')] bg-contain ml-5 bg-no-repeat bg-center text-transparent ">
+arrow
+        </div>
+    </button>
