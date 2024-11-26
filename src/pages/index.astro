@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Review from '../components/Review.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import logowithname from "../assets/images/logowithname.svg";
@@ -46,7 +47,7 @@ import nepalfront from "../assets/images/nepalfront.png";
 	</section> -->
 
 
-	<section id="intro" class="m-auto max-w-3xl text-center py-16">
+	<section id="intro" class="m-auto max-w-3xl text-center py-16 ">
 		<h1
 		data-aos="fade-up"
 		data-aos-delay="200"
@@ -75,7 +76,68 @@ import nepalfront from "../assets/images/nepalfront.png";
 	</section>
 
 	<!-- Sofia -->
-	<section id="reviews">
+	<section id="reviews" class="flex flex-wrap justify-center m-auto max-w-4xl gap-xs">
+		<Review
+			starfill1="#FF5900"
+			starfill2="#FF5900"
+			starfill3="#FF5900"
+			starfill4="#FF5900"
+			starfill5="#F2F2F2"
+			titel="Fantastisk tur"
+			text="“Jeg fik en uforglemmeligt, unikt og trygt rejseeventyr for livet...”"
+			name="Jens Jensen, juni 20"
+		></Review>
+		<Review
+			starfill1="#FF5900"
+			starfill2="#FF5900"
+			starfill3="#FF5900"
+			starfill4="#FF5900"
+			starfill5="#FF5900"
+			titel="Jeg har fundet mig selv"
+			text="“Jeg fik en uforglemmeligt, unikt og trygt rejseeventyr for livet...”"
+			name="Morten Mortensen, juni 20"
+		></Review>
+		<Review
+			starfill1="#FF5900"
+			starfill2="#FF5900"
+			starfill3="#FF5900"
+			starfill4="#FF5900"
+			starfill5="#FF5900"
+			titel="Kan klart anbefales"
+			text="“Jeg fik en uforglemmeligt, unikt og trygt rejseeventyr for livet...”"
+			name="Lise Lissen, juni 20"
+		></Review>
+		<Review
+			starfill1="#FF5900"
+			starfill2="#FF5900"
+			starfill3="#FF5900"
+			starfill4="#F2F2F2"
+			starfill5="#F2F2F2"
+			titel="Jeg har fundet mig selv"
+			text="“Jeg fik en uforglemmeligt, unikt og trygt rejseeventyr for livet...”"
+			name="Morten Mogensen, juni 20">
+		</Review>
+		<Review
+			starfill1="#FF5900"
+			starfill2="#FF5900"
+			starfill3="#FF5900"
+			starfill4="#FF5900"
+			starfill5="#FF5900"
+			titel="Kan klart anbefales"
+			text="“Jeg fik en uforglemmeligt, unikt og trygt rejseeventyr for livet...”"
+			name="Lise Lissen, juni 20">
+		</Review>
+		<Review
+			starfill1="#FF5900"
+			starfill2="#FF5900"
+			starfill3="#FF5900"
+			starfill4="#FF5900"
+			starfill5="#F2F2F2"
+			titel="Fantastisk tur"
+			text="“Jeg fik en uforglemmeligt, unikt og trygt rejseeventyr for livet...”"
+			name="Jens Jensen, juni 20">
+		</Review>
+
 
 	</section>
 	</article>
