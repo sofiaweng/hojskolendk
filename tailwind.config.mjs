@@ -5,6 +5,10 @@ export default {
   /* Vil du overskrive eller extende tailwinds indstillinger?  */
   theme: {
     extend: {
+      backgroundImage: {
+        'flower-bg': "url('/src/assets/images/flowerbg.svg')",
+      },
+
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
