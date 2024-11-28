@@ -14,7 +14,11 @@ import Accordion from "../components/Accordion.astro"
 <MainLayout>
     <section id="hero" class="px-3 relative bg-[url('/grotta.png')] bg-cover bg-fixed bg-center h-[98vh] flex flex-col justify-center items-center ">
 		<article class="relative h-full flex flex-col justify-center items-center overflow-hidden">
-		    <h1 id="parallaxText" class=" font-cooper text-6xl md:text-8xl  max-w-4xl text-yellow-500">AUSTRALIA, NEW ZEALAND, BALI & GILI ISLANDS</h1>
+		    <h1 
+            data-aos="zoom-in"
+		data-aos-easing="linear"
+		data-aos-duration="1000"
+            id="parallaxText" class=" font-cooper text-6xl md:text-8xl  max-w-4xl text-yellow-500">AUSTRALIA, NEW ZEALAND, BALI & GILI ISLANDS</h1>
 		</article>  
         <!-- Scroll Arrow -->
         <a href="#intro" class=" bg-[url('/arrowdown-orange.svg')] z-20 hover:animate-bounce bg-cover absolute -bottom-5 sm-w-[10%] w-[6%] md:-bottom-10 md:w-[5%]  aspect-[62/133] text-transparent">
@@ -33,14 +37,20 @@ import Accordion from "../components/Accordion.astro"
 </section> -->
 
 <section class="grid md:grid-cols-2 m-auto max-w-6xl my-14">
-    <div class="relative">
+    <div
+    data-aos="fade-right"
+		data-aos-delay="200"
+     class="relative">
         <Image class="px-4 md:px-0" src={Singlegili} alt="gili islands singleview"></Image>
         
            <div class=" absolute bottom-4 right-4"> <Button >Tilmeld infomøde</Button></div>
            <div class="absolute bottom-4 left-4"> <Button>Reserver plads</Button></div>
         
     </div>
-    <div class="px-4 md:px-8">
+    <div
+    data-aos="fade-left"
+		data-aos-delay="200"
+     class="px-4 md:px-8">
             <h1 class="mt-10 md:mt-0 font-cooper text-4xl text-orange-500 ">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
             <div class="mt-10">
                 <div> <span class="font-bold mr-20">Varighed:</span> <span>3 månader</span></div>
@@ -65,7 +75,10 @@ import Accordion from "../components/Accordion.astro"
   
 </section>
 </section>
-    <div class="px-4 m-auto max-w-4xl">
+    <div
+    data-aos="fade-up"
+		data-aos-delay="200"
+     class="px-4 m-auto max-w-4xl">
         <Accordion class="border-b-2 border-black" caption="Overblik" image="boat.webp" bio="Australien, New Zealand, Bali & Gili Islands. Tag med på højskole i udlandet og oplev den modsatte side af kloden med fantastiske oplevelser i smuk natur og spændende kulturer. På Bali og Gili Islands dykker vi ned i farverige landskaber, frodige regnskove, hvide sandstrande og vilde vulkaner. Nyd solnedgange, frisk kokosnød og et barfodsparadis. Australien byder på et stort eventyr med storbyer, ørkener, regnskove, fantastiske strande og unik natur. Mød kænguruer, koalaer og papegøjer i et gæstfrit og åbent land. New Zealand er et mekka for eventyr med rafting, kajaksejlads, vandreture og canyoning. Oplev nogle af verdens smukkeste landskaber og et imødekommende folk."></Accordion>
         <Accordion class="border-b-2 border-black" caption="Program" image="bloon.webp" bio="INTRODAGE: Vi starter med spændende introdage i fx Dubai, Bangkok, Doha, Singapore eller Brisbane. Vi lærer hinanden at kende gennem fællesmiddage, sightseeing og vores eget ’HÖJSKOLENDK Adventurerace’. Destination afhænger af fly og sæson. TEAMBUILDING: Bali & Gili Islands byder på frodig natur, smukke strande og aktiviteter som surfing og hyggelige landsbybesøg. Fra Ubud sejler vi til de bilfri Gili Islands med kridhvide strande og turkisblåt hav. FRIUGE INDONESIEN: Udforsk Indonesien i friugen - besøg Lombok, Nusa Penida, Komodo eller oplev yoga-retreats, surfcamps og roadtrips. Vi sikrer tryghed og fantastiske oplevelser. SELVUDVIKLING & KOMMUNIKATION: Byron Bay, Australien, byder på lækre strande, surf, markeder og undervisning. Brug fritiden på hikes, musik og besøg i Cape Byron – Australiens østligste punkt. FRIUGE AUSTRALIEN: Udforsk Australien i en 10-dages friuge. Tag på roadtrip, surfcamp, besøg Sydney, Melbourne eller Ayers Rock, eller svøm med delfiner. Vi mødes igen og flyver videre. SPORT & ADVENTURE: Queenstown, New Zealand, er et adventure-mekka med natur som bjerge, floder og gletsjere. Prøv rafting, kajak, hiking og canyoning – alt inkluderet. FRIUGE NEW ZEALAND: Udforsk New Zealand i ca. 10 dage – roadtrips til campsites og naturen er oplagt. Vi mødes til sidst og flyver hjem til Danmark med minder for livet."></Accordion>
         <Accordion class="border-b-2 border-black" caption="Inkluderet" image="ink.webp" bio="ALTID: Dansk rejseleder og undervisere, 24-timers vagttelefon, infobreve, visumvejledning, afrejsemøde, fælles afrejse, transfers, højskolebevis, Facebook-gruppe, rabat på vacciner, indkvartering (ekskl. friuger), lokal transport og entré, højskoleaftener, medlemskab af elevforening og Rejsegarantifonden, partnerskab med 'World Animal Protection', skovfredning med 'Verdens Skove' og plantning af 50 træer pr. elev. GENERELT: Fly tur/retur, skatter og bagage, undervisning i teambuilding, sport & adventure og selvudvikling, samt HÖJSKOLENDK Adventurerace. AUSTRALIEN: Indkvartering i Byron Bay, transport fra Brisbane, hike til Cape Byron, lån af surfboards, lokale markeder, livemusik, strand 100 meter fra værelset, rooftop bar og Robinson-dyst. NEW ZEALAND: Indkvartering i Queenstown, hikes til Queenstown Hill, Ben Lomond og Mt. Cook (Hooker Valley), kajak og canyoning ved Wanaka, river rafting, bubble soccer, archery tag, forhindringsbane, disc golf, filmaftener, jacuzzi og BBQ. BALI & GILI ISLANDS: Indkvartering med morgenmad, hike til Mount Batur, Monkey Forest, Tegalalang risterrasser, vandfald i Ubud, lokale markeder, heldagstur til Nusa Penida (Kelingking), surftimer, udflugt til Canggu, hurtigfærge til Gili Islands, snorkeltur (inkl. undervandsstatuer) og beach clean-up."></Accordion>
