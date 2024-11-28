@@ -32,16 +32,16 @@ import Accordion from "../components/Accordion.astro"
         </a> 
 </section> -->
 
-<section class="grid md:grid-cols-2 lg:mx-20 my-14">
+<section class="grid md:grid-cols-2 m-auto max-w-6xl my-14">
     <div class="relative">
         <Image class="" src={Singlegili} alt="gili islands singleview"></Image>
         
-           <div class=" absolute bottom-4 right-4"> <Button >Tilfeld infomøde</Button></div>
+           <div class=" absolute bottom-4 right-4"> <Button >Tilmeld infomøde</Button></div>
            <div class="absolute bottom-4 left-4"> <Button>Reserver plads</Button></div>
         
     </div>
     <div class="px-4 md:px-8">
-            <h1 class="font-cooper text-4xl text-orange-500 ">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
+            <h1 class="mt-10 md:mt-0 font-cooper text-4xl text-orange-500 ">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
             <div class="mt-10">
                 <div> <span class="font-bold mr-20">Varighed:</span> <span>3 månader</span></div>
                 <div> <span class="font-bold mr-[6.6rem]">Uge 1:</span> <span>Introdage</span></div>
@@ -60,7 +60,9 @@ import Accordion from "../components/Accordion.astro"
                 <Image class="h-8 w-auto" src={Paperplane} alt="gili islands singleview"></Image>
                 <span class="font-bold">Flygbillet tur/retur er inkluderet</span>
             </div>
+            <div class="flex justify-end  lg:ml-28 "><Button >Tilmeld infomøde</Button></div>
     </div>
+  
 </section>
 </section>
     <div class="mx-60">
@@ -71,12 +73,12 @@ import Accordion from "../components/Accordion.astro"
         <Accordion class="border-b-2 border-black" caption="Kontakt" image="louise.webp" bio="LOUISE SKJOLDBORG BRUUN. Hvis du læser dette har du sikkert eventyr i blodet, er nysgerrig på vores eventyrlige højskoleophold i 'Hawaii, Australien, Japan, Bali & Gili Islands', og har måske lidt spørgsmål du gerne vil have svar på eller brug for en snak ift. opholdet. Jeg hedder Louise og er selv tidligere elev (fra 2014) i HÖJSKOLENDK. Efter mit eget fantastiske højskoleophold, blev jeg rejseleder og nu er jeg en del af kontoret. Blandt mange af mine spændende opgaver i HÖJSKOLENDK, er dette højskoleophold “mit” ophold, så det er mig der sidder bag skærmen og sørger for alt det praktiske omkring eventyret og knokler mit allerbedste, så I får en fantastisk rejse. Har du spørgsmål, vil høre mere eller bare godt kunne tænke dig en hyggelig snak om vores eventyr i 'Hawaii, Australien, Japan, Bali & Gili Islands', er du altid velkommen til at give mig et kald eller smide en mail. Tlf.: 7027 9007 // Mail: lsb@hojskolendk.dk Jeg glæder mig til at høre fra dig! Louise - HÖJSKOLENDK"></Accordion>
     </div>
 </section>
-<script>
+<!-- <script>
     // Parallax Effect for Text
     window.addEventListener('scroll', function () {
       const parallaxText = document.getElementById('parallaxText');
       const scrollPosition = window.scrollY; // Current scroll position
       parallaxText.style.transform = `translateY(${scrollPosition * 0.8}px)`; // Adjust speed (0.3 is the multiplier for slower movement)
     });
-  </script>
+  </script> -->
 </MainLayout>
